@@ -3,4 +3,13 @@
   <groupId>DEVOPS</groupId>
   <artifactId>Hello</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+   <distributionManagement>
+<snapshotRepository>
+<id>Nexus</id>
+<name>Rakshit Kapoor</name>
+<url>http://localhost:8081/repository/CICI-Assignment-2/</url>
+</snapshotRepository>
+</distributionManagement>
+  
 </project>
