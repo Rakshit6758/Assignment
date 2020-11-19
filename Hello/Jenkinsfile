@@ -5,7 +5,7 @@ pipeline{
        
              stage('clean')                                                
              {  steps{
-                       sh 'mvn clean'
+                       bat 'mvn clean'
                      } 
              
              }
@@ -13,7 +13,7 @@ pipeline{
              
              stage('test')
              {  steps{
-                       sh 'mvn test'                                          
+                       bat 'mvn test'                                          
                      }                                                       
              
              }
@@ -21,7 +21,7 @@ pipeline{
              
              stage('deploy')
              {  steps{
-                       sh 'mvn deploy'
+                       bat 'mvn deploy'
                      } 
              
              }
