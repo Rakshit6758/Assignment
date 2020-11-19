@@ -11,7 +11,7 @@
   
   <distributionManagement>
   <snapshotRepository>
-  <id>Nexus</id>
+  <id>Rakshit</id>
   <name>CICI-Assignment-2</name>
   <url>http://localhost:8081/repository/CICI-Assignment-2/</url>
   </snapshotRepository>
