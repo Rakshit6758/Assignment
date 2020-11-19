@@ -1,20 +1,31 @@
 pipeline{
-    agent any
-    stages{
-      stage('Clean'){
-          steps{
-          bat 'mvn clean'
-          }
-      }
-      stage('Install'){
-          steps{
-          bat 'mvn install'
-          }
-      }
-       stage('Deploy'){
-          steps{
-          bat 'mvn deploy'
-          }
-      }
-    }
- }
+     agent any 
+     
+     stages{
+       
+             stage('clean')                                                
+             {  steps{
+                       sh 'mvn clean'
+                     } 
+             
+             }
+              
+             
+             stage('test')
+             {  steps{
+                       sh 'mvn test'                                          
+                     }                                                       
+             
+             }
+             
+             
+             stage('deploy')
+             {  steps{
+                       sh 'mvn deploy'
+                     } 
+             
+             }
+             
+       }
+ 
+}
